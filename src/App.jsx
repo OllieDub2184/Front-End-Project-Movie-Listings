@@ -5,12 +5,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Favourites from './pages/favourites'
 import Home from './pages/home'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container } from 'react-bootstrap'
 
 function App() {
 
+  
 
   return (
     <>
+    <Container fluid>
     <Router>
       <Routes>
       <Route path='/' element={<Home/>}/> 
@@ -18,7 +22,7 @@ function App() {
       <Route path='/Favourites' element={<Favourites/>}/></Routes>
     </Router>
     
-    
+    </Container>
     </>
    
   )
