@@ -1,10 +1,12 @@
 // src/components/MovieCard.js
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button} from 'react-bootstrap';
+import { Heart, HeartFill } from 'react-bootstrap-icons' 
 import { IMAGE_BASE_URL } from '../services/moviesServices';
 import './MovieCard.css'; // Import the CSS for hover effects
 
-const MovieCard = ({ movie }) => {
+
+const MovieCard = ({ movie, isFavourite}) => {
   console.log('MovieCard component movie: ', movie)
   const posterUrl = movie.poster_path
     ? `${IMAGE_BASE_URL}${movie.poster_path}`
@@ -19,6 +21,7 @@ const MovieCard = ({ movie }) => {
           Release: {movie.release_date || 'N/A'} <br />
     
         </Card.Text>
+        <Button variant='link' title={isFavourite? 'Remove from Favourites' : 'Add to favourites'} aria-label={isFavourite? 'Remove from Favourites' : 'Add to favourites'}>{isFavourite?(<HeartFill size={22} />):(<Heart size={22}/>)}</Button>
       </Card.Body>
     </Card>
   );
