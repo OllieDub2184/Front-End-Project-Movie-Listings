@@ -3,10 +3,11 @@ import {BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Favourites from './pages/favourites'
+import FavoritesPage from './pages/Favourites'
 import Home from './pages/home'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
+import Navigation from './components/Navigation'
 
 function App() {
 
@@ -16,10 +17,12 @@ function App() {
     <>
     <Container fluid>
     <Router>
+      <Navigation/>
       <Routes>
       <Route path='/' element={<Home/>}/> 
       
-      <Route path='/Favourites' element={<Favourites/>}/></Routes>
+      <Route path='/Favourites' element={<FavoritesPage/>}/>
+      </Routes>
     </Router>
     
     </Container>
