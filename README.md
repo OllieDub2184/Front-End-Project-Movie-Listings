@@ -1,5 +1,7 @@
 # Movie Listings Project
 
+[Live Demo](https://OllieDub2184.github.io/Front-End-Project-Movie-Listings)
+
 A modern React application for browsing and managing your favorite movies, powered by TMDB API. This project allows users to search for movies, view detailed information, and maintain a personalized list of favorite movies.
 
 ## Features
