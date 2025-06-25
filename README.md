@@ -102,3 +102,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Reports
 
 - [Lighthouse Report](Docs/Lighthouse%20Report.pdf)
+- [Accessibility Report](Docs/Accessibility%20Report.md)
