@@ -21,30 +21,7 @@ const apiClient = axios.create({
   },
 });
 
-export const getPopularMovies = async (page = 1) => {
-  try {
-    const response = await apiClient.get("/movie/popular", {
-      params: { page },
-    });
-    return response.data; // Contains results, page, total_pages, total_results
-  } catch (error) {
-    console.error("Error fetching popular movies:", error);
-    throw error; // Re-throw to be caught by the component
-  }
-};
 
-export const getTrendingMovies = async (timeWindow = "day") => {
-  // timeWindow can be 'day' or 'week'
-  try {
-    const response = await apiClient.get(`/trending/movie/${timeWindow}`);
-    return response.data.results; // Trending API returns results directly
-  } catch (error) {
-    console.error("Error fetching trending movies:", error);
-    throw error;
-  }
-
-
-};
 
 export const searchMovies = async (query ,page =1, year = null) =>{try {
  console.log(query)

@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Container, Button, Alert } from 'react-bootstrap';
 import MovieGrid from '../components/MovieGrid';
-import { getPopularMovies, searchMovies } from '../services/moviesServices';
-import { Spinner } from 'react-bootstrap'
+import { searchMovies } from '../services/moviesServices';
 import SearchBar from '../components/SearchBar';
-import Pagination from '../components/Pagination';
 import PaginationComponent from '../components/Pagination';
 
 
