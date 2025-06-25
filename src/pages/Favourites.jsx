@@ -8,7 +8,12 @@ import {
 } from "../utils/LocalStorage";
 
 
-const Favourites = () => {
+
+
+import "./FavouritesPage.css";
+
+const FavouritesPage = () => {
+
   const [favorites, setFavorites] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -196,4 +201,6 @@ const Favourites = () => {
   );
 };
 
-export default Favourites;
+
+export default FavouritesPage;
+
