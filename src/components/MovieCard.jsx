@@ -2,8 +2,10 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Heart, HeartFill } from "react-bootstrap-icons";
+
 import { IMAGE_BASE_URL } from "../services/moviesServices"
 import "./styles/MovieCard.css";
+
 
 const MovieCard = ({ movie, isFavorite = false, onToggleFavorite }) => {
   if (!movie || typeof movie.id === "undefined") {
@@ -24,11 +26,7 @@ const MovieCard = ({ movie, isFavorite = false, onToggleFavorite }) => {
   };
 
   return (
-    <Link
-      to={`/movie/${movie.id}`}
-      style={{ textDecoration: "none", display: "flex", width: "100%" }}
-      className="movie-card-link-wrapper"
-    >
+
       <Card className="movie-card bg-dark text-white h-100 d-flex flex-column">
         <Card.Img
           variant="top"
@@ -73,7 +71,7 @@ const MovieCard = ({ movie, isFavorite = false, onToggleFavorite }) => {
           </div>
         </Card.Body>
       </Card>
-    </Link>
+
   );
 };
 
