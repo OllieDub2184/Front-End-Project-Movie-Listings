@@ -97,3 +97,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [TMDB API](https://www.themoviedb.org/documentation/api) for providing movie data
 - [Vite](https://vitejs.dev/) for the blazing fast development experience
 - [React](https://reactjs.org/) for the UI framework
+
+## Reports
+
+- [Lighthouse Report](Docs/Lighthouse%20Report.pdf)
